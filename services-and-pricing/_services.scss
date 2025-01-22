@@ -1,0 +1,48 @@
+$primary: #fcc419;
+@mixin effect-3d {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35),
+                  15px 15px $primary;
+    border-radius: 15px;
+  }
+
+#service-plans {
+    margin-top: 75px;
+}
+
+.services-row {
+    @include effect-3d();
+    .card {
+        text-align: center;
+        .card-title {
+            flex-grow: 1;
+        }
+        .service-price {
+            margin-top: 25px;
+            p {
+                font-size: 3rem;
+                font-weight: 550;
+            }
+        }
+        .regular-pricing {
+            font-size: 1.25rem;
+            color: #868e96;
+        }
+        .inc-vat {
+            font-size: 1rem;
+            color: #868e96;
+        }
+    }
+}
+
+#plumbing-and-boilers {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    li {
+        list-style: none;
+        font-size: 1.75rem;
+    }
+    .col {
+        @include effect-3d();
+    }
+}

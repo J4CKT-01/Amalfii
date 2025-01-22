@@ -1,0 +1,338 @@
+@import "services-and-pricing/_services";
+@import "contact/_contact";
+@import "faq/_faq";
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu"), url(http://example.com/fonts/ubuntu.woff) format("woff");
+}
+
+$text-color: #343a40;
+$inactive-text: #868e96;
+$primary: #fcc419;
+$secondary: #ffe066;
+@mixin effect-3d {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35),
+                15px 15px $primary;
+  border-radius: 15px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+* {
+  color: $text-color;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+// GENERAL STYLING
+
+html {
+  scroll-behavior: smooth;
+  [class^="col-"],
+  [class*=" col-"] {
+    //border: 2px solid black; /* add a border */
+    padding: 20px;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 2.75rem;
+  }
+  h1 {
+    font-size: 6.5rem;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 90%;
+  }
+}
+
+.nav-bar {
+  padding-top: 0px;
+  height: max-content;
+  ul {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: $text-color;
+    margin-bottom: 0px;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: $text-color;
+    font-size: 1.25rem;
+    font-weight: 550;
+    padding: 25px 0px 25px 0px;
+  }
+  .navbar-logo {
+    flex: 45%;
+    user-select: none;
+    color: $text-color;
+    img {
+      vertical-align: middle;
+      width: 64px;
+      object-fit: cover;
+    }
+  }
+  .navbar-toggle {
+    display: none;
+    i {
+      color: $text-color;
+      font-size: 1.75rem;
+    }
+  }
+  .navbar-links {
+    flex: auto;
+    text-align: center;
+  }
+  .navbar-links:hover {
+    background-color: $primary;
+    a {
+      color: $text-color;
+    }
+  }
+  @media (max-width: 768px) {
+    ul {
+      flex-wrap: wrap;
+      padding: 0px;
+    }
+    .navbar-toggle {
+      display: block;
+      margin-right: 25px;
+    }
+    .navbar-links {
+      display: none;
+      width: 100%;
+      text-align: center;
+    }
+    .active {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+.container {
+  padding-bottom: 75px;
+}
+
+a.button {
+  background-color: $primary;
+  width: fit-content;
+  padding: 20px;
+  margin-top: 75px;
+  text-decoration: none;
+  color: $text-color;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 15px;
+}
+a.button:hover {
+  background-color: $secondary;
+}
+
+#hero {
+  --bs-gutter-x: 0rem;
+    height: 750px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 75px;
+  .background {
+    background-image: url('images/stock.jpg'); 
+    filter: blur(5px);
+    background-position-x: 700px;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .text-overlay {
+    position: relative;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .text {
+      color: white;
+      display: flex;
+      flex-direction: column;
+
+    }
+    .accredited {
+      margin-top: 75px;
+      display: flex;
+      width: fit-content;
+      img {
+        max-width: 100px;
+        max-height: 100px;
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  .card-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+    i {
+      font-size: 3rem;
+    }
+  }
+  .card-title {
+    vertical-align: middle;
+    h3 {
+      font-size: 1.75rem;
+      font-weight: 500;
+    }
+  }
+  .card-content {
+    flex-grow: 1;
+  }
+}
+
+#services {
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+  }
+  .card {
+    @include effect-3d();
+  }
+}
+
+#about {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    h2 {
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
+  }
+  .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .about-image {
+    background-image: url('images/fleet.JPG');
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include effect-3d();
+  }
+}
+
+#companies {
+  .trusted-text {
+    display: flex;
+    align-items: center;
+    h4 {
+      font-weight: 700;
+    }
+  }
+  .gallery {
+    padding: 30px 0px 30px 0px;
+    .col {
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+    }
+    img {
+      height: 100px;
+      max-width: 200px;
+      object-fit:contain;
+    }
+  }
+}
+
+
+
+#footer {
+  margin-top: 75px;
+  .row {
+    padding: 5px !important;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    i {
+      margin: 0px 100px 0px 100px;
+      font-size: 2rem;
+    }
+  }
+  .quick-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 0px 0px 0px;
+    height: max-content;
+    padding: 20px;
+    a {
+      text-decoration: none;
+      color: $text-color;
+      display: inline-block;
+      border-radius: 15px;
+      font-size: 16px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .ts-and-cs {
+    text-align: center;
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    p {
+      margin: 0px;
+      font-size: 16px;
+      color: $inactive-text;
+    }
+  }
+}
+
+/* HOMEPAGE STYLING */
+
+/* ABOUT US STYLING */
+
+/* CONTACT STYLING */

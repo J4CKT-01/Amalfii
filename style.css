@@ -1,0 +1,365 @@
+#service-plans {
+  margin-top: 75px;
+}
+
+.services-row {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35), 15px 15px #fcc419;
+  border-radius: 15px;
+}
+.services-row .card {
+  text-align: center;
+}
+.services-row .card .card-title {
+  flex-grow: 1;
+}
+.services-row .card .service-price {
+  margin-top: 25px;
+}
+.services-row .card .service-price p {
+  font-size: 3rem;
+  font-weight: 550;
+}
+.services-row .card .regular-pricing {
+  font-size: 1.25rem;
+  color: #868e96;
+}
+.services-row .card .inc-vat {
+  font-size: 1rem;
+  color: #868e96;
+}
+
+#plumbing-and-boilers {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+#plumbing-and-boilers li {
+  list-style: none;
+  font-size: 1.75rem;
+}
+#plumbing-and-boilers .col {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35), 15px 15px #fcc419;
+  border-radius: 15px;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu"), url(http://example.com/fonts/ubuntu.woff) format("woff");
+}
+body {
+  min-height: 100vh;
+}
+
+* {
+  color: #343a40;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html [class^=col-],
+html [class*=" col-"] {
+  padding: 20px;
+}
+html p {
+  font-size: 1.5rem;
+  line-height: 2.75rem;
+}
+html h1 {
+  font-size: 6.5rem;
+  font-weight: 600;
+}
+html h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+html h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+html h4 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+html h5 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 90%;
+  }
+}
+.nav-bar {
+  padding-top: 0px;
+  height: -moz-max-content;
+  height: max-content;
+}
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: #343a40;
+  margin-bottom: 0px;
+}
+.nav-bar li {
+  list-style-type: none;
+}
+.nav-bar a {
+  display: inline-block;
+  text-decoration: none;
+  color: #343a40;
+  font-size: 1.25rem;
+  font-weight: 550;
+  padding: 25px 0px 25px 0px;
+}
+.nav-bar .navbar-logo {
+  flex: 45%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: #343a40;
+}
+.nav-bar .navbar-logo img {
+  vertical-align: middle;
+  width: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.nav-bar .navbar-toggle {
+  display: none;
+}
+.nav-bar .navbar-toggle i {
+  color: #343a40;
+  font-size: 1.75rem;
+}
+.nav-bar .navbar-links {
+  flex: auto;
+  text-align: center;
+}
+.nav-bar .navbar-links:hover {
+  background-color: #fcc419;
+}
+.nav-bar .navbar-links:hover a {
+  color: #343a40;
+}
+@media (max-width: 768px) {
+  .nav-bar ul {
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  .nav-bar .navbar-toggle {
+    display: block;
+    margin-right: 25px;
+  }
+  .nav-bar .navbar-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-bar .active {
+    display: block;
+    text-align: center;
+  }
+}
+
+.container {
+  padding-bottom: 75px;
+}
+
+a.button {
+  background-color: #fcc419;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+  margin-top: 75px;
+  text-decoration: none;
+  color: #343a40;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 15px;
+}
+
+a.button:hover {
+  background-color: #ffe066;
+}
+
+#hero {
+  --bs-gutter-x: 0rem;
+  height: 750px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 75px;
+}
+#hero .background {
+  background-image: url("images/stock.jpg");
+  filter: blur(5px);
+  background-position-x: 700px;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#hero .text-overlay {
+  position: relative;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#hero .text-overlay .text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+#hero .text-overlay .accredited {
+  margin-top: 75px;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#hero .text-overlay .accredited img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.card .card-icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+}
+.card .card-icon i {
+  font-size: 3rem;
+}
+.card .card-title {
+  vertical-align: middle;
+}
+.card .card-title h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.card .card-content {
+  flex-grow: 1;
+}
+
+#services .row {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+#services .card {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35), 15px 15px #fcc419;
+  border-radius: 15px;
+}
+
+#about .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#about .content h2 {
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+#about .row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#about .about-image {
+  background-image: url("images/fleet.JPG");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35), 15px 15px #fcc419;
+  border-radius: 15px;
+}
+
+#companies .trusted-text {
+  display: flex;
+  align-items: center;
+}
+#companies .trusted-text h4 {
+  font-weight: 700;
+}
+#companies .gallery {
+  padding: 30px 0px 30px 0px;
+}
+#companies .gallery .col {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+#companies .gallery img {
+  height: 100px;
+  max-width: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#footer {
+  margin-top: 75px;
+}
+#footer .row {
+  padding: 5px !important;
+}
+#footer .social-links {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#footer .social-links i {
+  margin: 0px 100px 0px 100px;
+  font-size: 2rem;
+}
+#footer .quick-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 0px 0px 0px;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 20px;
+}
+#footer .quick-links a {
+  text-decoration: none;
+  color: #343a40;
+  display: inline-block;
+  border-radius: 15px;
+  font-size: 16px;
+}
+#footer .quick-links a:hover {
+  text-decoration: underline;
+}
+#footer .ts-and-cs {
+  text-align: center;
+  width: 100%;
+  padding: 0px 0px 10px 0px;
+}
+#footer .ts-and-cs p {
+  margin: 0px;
+  font-size: 16px;
+  color: #868e96;
+}
+
+/* HOMEPAGE STYLING */
+/* ABOUT US STYLING */
+/* CONTACT STYLING *//*# sourceMappingURL=style.css.map */
