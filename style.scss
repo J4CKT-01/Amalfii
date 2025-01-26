@@ -235,7 +235,6 @@ a.button:hover {
   .row {
     display: flex;
     justify-content: space-evenly;
-    padding: 50px;
   }
   .card {
     @include effect-3d();
@@ -293,6 +292,7 @@ a.button:hover {
 
 
 #footer {
+  background-color: $primary;
   margin-top: 75px;
   .row {
     padding: 5px !important;
@@ -308,9 +308,9 @@ a.button:hover {
   }
   .quick-links {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     padding: 0px 0px 0px 0px;
-    height: max-content;
     padding: 20px;
     a {
       text-decoration: none;

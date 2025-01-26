@@ -26,10 +26,6 @@
   color: #868e96;
 }
 
-#plumbing-and-boilers {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
 #plumbing-and-boilers .fa-li {
   --fa-secondary-color: #fcc419;
 }
@@ -325,7 +321,6 @@ a.button:hover {
 #services .row {
   display: flex;
   justify-content: space-evenly;
-  padding: 50px;
 }
 #services .card {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35), 15px 15px #fcc419;
@@ -379,6 +374,7 @@ a.button:hover {
 }
 
 #footer {
+  background-color: #fcc419;
   margin-top: 75px;
 }
 #footer .row {
@@ -395,10 +391,9 @@ a.button:hover {
 }
 #footer .quick-links {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   padding: 0px 0px 0px 0px;
-  height: -moz-max-content;
-  height: max-content;
   padding: 20px;
 }
 #footer .quick-links a {
