@@ -10,7 +10,6 @@ $primary: #fcc419;
 }
 
 .services-row {
-    @include effect-3d();
     .card {
         text-align: center;
         .card-title {
@@ -37,12 +36,5 @@ $primary: #fcc419;
 #plumbing-and-boilers {
     margin-top: 25px;
     margin-bottom: 25px;
-    text-align: center;
-    li {
-        list-style: none;
-        font-size: 1.75rem;
-    }
-    .col {
-        @include effect-3d();
-    }
+
 }

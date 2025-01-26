@@ -2,10 +2,6 @@
   margin-top: 75px;
 }
 
-.services-row {
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35), 15px 15px #fcc419;
-  border-radius: 15px;
-}
 .services-row .card {
   text-align: center;
 }
@@ -31,15 +27,6 @@
 #plumbing-and-boilers {
   margin-top: 25px;
   margin-bottom: 25px;
-  text-align: center;
-}
-#plumbing-and-boilers li {
-  list-style: none;
-  font-size: 1.75rem;
-}
-#plumbing-and-boilers .col {
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35), 15px 15px #fcc419;
-  border-radius: 15px;
 }
 
 @font-face {
