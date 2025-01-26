@@ -43,11 +43,11 @@ html {
   }
   h1 {
     font-size: 6.5rem;
-    font-weight: 600;
+    font-weight: 800;
   }
   h2 {
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 700;
   }
   h3 {
     font-size: 2.5rem;
@@ -61,6 +61,13 @@ html {
     font-size: 1.5rem;
     font-weight: 200;
   }
+}
+
+.fa-duotone {
+  --fa-primary-color: #343a40;
+  --fa-secondary-color: #fcc419;
+  --fa-secondary-opacity: 1.0;
+  font-size: 4rem;
 }
 
 @media (min-width: 1400px) {
@@ -150,7 +157,6 @@ a.button {
   background-color: $primary;
   width: fit-content;
   padding: 20px;
-  margin-top: 75px;
   text-decoration: none;
   color: $text-color;
   font-weight: 600;
@@ -210,13 +216,11 @@ a.button:hover {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 20px 0px 20px 0px;
-    i {
-      font-size: 3rem;
-    }
+    margin: 40px 0px 40px 0px;
   }
   .card-title {
     vertical-align: middle;
+    text-align: center;
     h3 {
       font-size: 1.75rem;
       font-weight: 500;

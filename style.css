@@ -3,16 +3,18 @@
 }
 
 .services-row .card {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
   text-align: center;
 }
 .services-row .card .card-title {
   flex-grow: 1;
 }
 .services-row .card .service-price {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 .services-row .card .service-price p {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 550;
 }
 .services-row .card .regular-pricing {
@@ -27,6 +29,75 @@
 #plumbing-and-boilers {
   margin-top: 25px;
   margin-bottom: 25px;
+}
+#plumbing-and-boilers .fa-li {
+  --fa-secondary-color: #fcc419;
+}
+#plumbing-and-boilers .fa-li i {
+  color: #fcc419;
+}
+#plumbing-and-boilers li {
+  font-size: 1.5rem;
+  line-height: 2.75rem;
+}
+#plumbing-and-boilers .plumbing-and-boilers-text {
+  padding: 25px;
+}
+#plumbing-and-boilers .appliances-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+}
+#plumbing-and-boilers .appliances-grid .appliance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#plumbing-and-boilers .appliances-grid .appliance h3 {
+  margin-top: 25px;
+}
+
+#smart-home-thermostats .row {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+}
+#smart-home-thermostats img {
+  width: 50%;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 75% 100%, 100% 0);
+          clip-path: polygon(0 0, 0% 100%, 75% 100%, 100% 0);
+  padding: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 0px 0px 15px;
+}
+#smart-home-thermostats .thermostat-content {
+  width: 50%;
+  padding: 25px;
+  text-align: center;
+  padding-right: 50px;
+}
+#smart-home-thermostats .thermostat-content h2 {
+  margin: 25px 0px 25px 0px;
+}
+#smart-home-thermostats .thermostat-content .thermostat-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#smart-home-thermostats .thermostat-content .thermostat-icons .thermostat {
+  text-align: center;
+  margin: 25px 0px 25px 0px;
+}
+#smart-home-thermostats .thermostat-content .thermostat-icons .thermostat i {
+  font-size: 4rem;
+}
+#smart-home-thermostats .thermostat-content .thermostat-icons .thermostat h3 {
+  margin-top: 15px;
+  text-decoration: underline;
 }
 
 @font-face {
@@ -58,11 +129,11 @@ html p {
 }
 html h1 {
   font-size: 6.5rem;
-  font-weight: 600;
+  font-weight: 800;
 }
 html h2 {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 html h3 {
   font-size: 2.5rem;
@@ -75,6 +146,13 @@ html h4 {
 html h5 {
   font-size: 1.5rem;
   font-weight: 200;
+}
+
+.fa-duotone {
+  --fa-primary-color: #343a40;
+  --fa-secondary-color: #fcc419;
+  --fa-secondary-opacity: 1.0;
+  font-size: 4rem;
 }
 
 @media (min-width: 1400px) {
@@ -169,7 +247,6 @@ a.button {
   width: -moz-fit-content;
   width: fit-content;
   padding: 20px;
-  margin-top: 75px;
   text-decoration: none;
   color: #343a40;
   font-weight: 600;
@@ -231,13 +308,11 @@ a.button:hover {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 20px 0px 20px 0px;
-}
-.card .card-icon i {
-  font-size: 3rem;
+  margin: 40px 0px 40px 0px;
 }
 .card .card-title {
   vertical-align: middle;
+  text-align: center;
 }
 .card .card-title h3 {
   font-size: 1.75rem;

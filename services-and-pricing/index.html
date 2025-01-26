@@ -21,6 +21,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <script src="https://kit.fontawesome.com/467e2900c1.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../script.js" defer></script>
     <!--Ubuntu Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,47 +45,50 @@
       </ul>
     </nav>
     <section id="service-plans" class="container">
-      <div class="row services-row p-3">
+      <div class="row services-row p-3 d-flex justify-content-center">
         <div class="col-12 d-flex justify-content-center">
-          <h2>Service Plans</h2>
+          <h2><span><i class="fa-duotone fa-regular fa-repeat" style="margin-right: 25px; --fa-secondary-opacity: 0;"></i></span>Service Plans</h2>
         </div>
-        <div class="col mx-lg-2 card">
-            <div class="card-icon"><i class="bi bi-gear-wide-connected"></i></div>
+        <div class="col-3 mx-lg-4 my-lg-4 card">
+            <div class="card-icon"><i class="fa-duotone fa-regular fa-temperature-arrow-up"></i></div>
             <div class="card-title"><h3>Annual Gas Boiler</h3></div>
             <div class="service-price"><p>£6.99/month</p></div>
-            <p class="regular-pricing">Regular Pricing: £70.00</p>
             <p class="inc-vat">(Inc. VAT)</p>
             <a class="button align-self-center" href="#">Find out more..</a>
         </div>
-        <div class="col mx-lg-2 card">
-            <div class="card-icon"><i class="bi bi-tools"></i></div>
+        <div class="col-3 mx-lg-4 my-lg-4 card">
+            <div class="card-icon"><i class="fa-duotone fa-regular fa-house"></i></div>
             <div class="card-title"><h3>Landlord Gas Safety Inspection</h3></div>
             <div class="service-price"><p>£7.99/month</p></div>
-            <p class="regular-pricing">Regular Pricing: £70.00</p>
             <p class="inc-vat">(Inc. VAT)</p>
             <a class="button align-self-center" href="#">Find out more..</a>
         </div>
-        <div class="col mx-lg-2 card">
-          <div class="card-icon"><i class="bi bi-wrench"></i></div>
+        <div class="col-3 mx-lg-4 my-lg-4 card">
+          <div class="card-icon">
+            <i class="fa-duotone fa-regular fa-temperature-arrow-up"></i>
+            <i class="fa-duotone fa-regular fa-slash-forward"></i>
+            <i class="fa-duotone fa-regular fa-fire"></i>
+          </div>
               <div class="card-title"><h3>Annual Gas Boiler and Gas Fire</h3></div>
               <div class="service-price"><p>£9.99/month</p></div>
-              <p class="regular-pricing">Regular Pricing: £110.00</p>
               <p class="inc-vat">(Inc. VAT)</p>
               <a class="button align-self-center" href="#">Find out more..</a>
         </div>
-        <div class="col mx-lg-2 card">
-            <div class="card-icon"><i class="bi bi-tools"></i></div>
+        <div class="col-3 mx-lg-4 my-lg-4 card">
+            <div class="card-icon"><i class="fa-duotone fa-regular fa-air-conditioner"></i></div>
             <div class="card-title"><h3>Air Source Heat Pump</h3></div>
             <div class="service-price"><p>£12.99/month</p></div>
-            <p class="regular-pricing">Regular Pricing: £150.00</p>
             <p class="inc-vat">(Inc. VAT)</p>
             <a class="button align-self-center" href="#">Find out more..</a>
         </div>
-        <div class="col mx-lg-2 card">
-          <div class="card-icon"><i class="bi bi-wrench"></i></div>
+        <div class="col-3 mx-lg-4 my-lg-4 card">
+          <div class="card-icon">
+            <i class="fa-duotone fa-regular fa-house"></i>
+            <i class="fa-duotone fa-regular fa-slash-forward"></i>
+            <i class="fa-duotone fa-regular fa-vent-damper"></i>
+          </div>
               <div class="card-title"><h3>Air Source Heat Pump and System</h3></div>
               <div class="service-price"><p>£14.99/month</p></div>
-              <p class="regular-pricing">Regular Pricing: £180.00</p>
               <p class="inc-vat">(Inc. VAT)</p>
               <a class="button align-self-center" href="#">Find out more..</a>
         </div>
@@ -92,39 +96,72 @@
     </section>
     <section id="plumbing-and-boilers" class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 d-flex justify-content-center">
+          <h2><span><i class="fa-duotone fa-regular fa-toolbox" style="margin-right: 25px; --fa-secondary-opacity: 0;"></i></span>General Servicing and Repairs</h2>
         </div>
         <div class="col-6 plumbing-and-boilers-text">
-          <h2>Plumbing and Boilers Repair and Service</h2>
+          <h3>Services we provide:</h3>
+          <ol class="fa-ul">
+            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Checking immersion heater function</li>
+            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Cleaning evaporator fans and comb straight</li>
+            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Checking insulation</li>
+            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Checking expansion vessel, pressure and air unit</li>
+            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Checking for leaks of water and refrigerant</li>
+            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Servicing hot water cylinder, testing correct operation of all safety components</li>
+            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Checking electrical supply, condition and operation</li>
+            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Checking refrigerant pressures and heatline temperatures</li>
+            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Checking for fault codes on control unit</li>
+            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Producing customer paperwork</li>
+          </ol>
+        </div>
+        <div class="col-6 appliances">
+          <div class="appliances-grid">
+            <div class="appliance">
+              <i class="fa-duotone fa-regular fa-pipe-valve"></i>
+              <h3>Plumbing</h3>
+            </div>
+            <div class="appliance">
+              <i class="fa-duotone fa-regular fa-droplet-degree"></i>
+              <h3>Boilers</h3>
+            </div>
+            <div class="appliance">
+              <i class="fa-duotone fa-regular fa-oven"></i>
+              <h3>Gas Appliances</h3>
+            </div>
+            <div class="appliance">
+              <i class="fa-duotone fa-regular fa-air-conditioner"></i>
+              <h3>ASHP</h3>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="smart-thermos" class="container">
-      <div class="row services-row p-3">
-        <div class="col-12 d-flex justify-content-center">
+    <section id="smart-home-thermostats" class="container">
+      <div class="row">
+        <img src="../images/boiler.avif" alt="">
+        <div class="thermostat-content">
           <h2>Smart Home Thermostats</h2>
-        </div>
-        <div class="col mx-lg-2 card">
-          <div class="card-icon"><i class="bi bi-wrench"></i></div>
-              <div class="card-title"><h3>Nest Learning Thermostat</h3></div>
-              <div class="service-price"><p>£POA</p></div>
-              <p class="regular-pricing">Price varies depending on property requirements.</p>
-              <a class="button align-self-center" href="#">Find out more..</a>
-        </div>
-        <div class="col mx-lg-2 card">
-          <div class="card-icon"><i class="bi bi-wrench"></i></div>
-              <div class="card-title"><h3>Hive Smart Thermostat</h3></div>
-              <div class="service-price"><p>£POA</p></div>
-              <p class="regular-pricing">Price varies depending on property requirements.</p>
-              <a class="button align-self-center" href="#">Find out more..</a>
-        </div>
-        <div class="col mx-lg-2 card">
-          <div class="card-icon"><i class="bi bi-wrench"></i></div>
-              <div class="card-title"><h3>Tado smart thermostat</h3></div>
-              <div class="service-price"><p>£POA</p></div>
-              <p class="regular-pricing">Price varies depending on property requirements.</p>
-              <a class="button align-self-center" href="#">Find out more..</a>
+          <p>
+            A smart control for a boiler is a device that allows you to control and monitor your boiler remotely,
+             typically using a smartphone app or a web interface. Some smart controls also have built-in learning
+              algorithms that can optimise the performance of your boiler based on your usage patterns, helping to
+               save energy and reduce your heating bills.
+          </p>
+          <div class="thermostat-icons">
+            <div class="thermostat">
+              <i class="fa-duotone fa-regular fa-leaf"></i>
+              <h3>Nest</h3>
+            </div>
+            <div class="thermostat">
+              <i class="fa-duotone fa-regular fa-hexagon"></i>
+              <h3>Hive</h3>
+            </div>
+            <div class="thermostat">
+              <i class="fa-duotone fa-regular fa-circle-t"></i>
+              <h3>Tado</h3>
+            </div>
+          </div>
         </div>
       </div>
     </section>
