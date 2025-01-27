@@ -14,12 +14,8 @@
   margin-top: 10px;
 }
 .services-row .card .service-price p {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 550;
-}
-.services-row .card .regular-pricing {
-  font-size: 1.25rem;
-  color: #868e96;
 }
 .services-row .card .inc-vat {
   font-size: 1rem;
@@ -52,6 +48,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 25px 0px 25px 0px;
 }
 #plumbing-and-boilers .appliances-grid .appliance h3 {
   margin-top: 25px;
@@ -94,6 +91,13 @@
 #smart-home-thermostats .thermostat-content .thermostat-icons .thermostat h3 {
   margin-top: 15px;
   text-decoration: underline;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 25px;
 }
 
 @font-face {
@@ -261,30 +265,20 @@ a.button:hover {
   overflow: hidden;
   margin-bottom: 75px;
 }
-#hero .background {
-  background-image: url("images/stock.jpg");
-  filter: blur(5px);
-  background-position-x: 700px;
-  background-size: cover;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
 #hero .text-overlay {
   position: relative;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.65);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding: 50px;
 }
 #hero .text-overlay .text {
-  color: white;
+  color: #343a40;
   display: flex;
   flex-direction: column;
 }
 #hero .text-overlay .accredited {
-  margin-top: 75px;
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
@@ -373,9 +367,12 @@ a.button:hover {
      object-fit: contain;
 }
 
+#reviews .reviews-carousel {
+  margin: 50px 0px 0px 0px;
+}
+
 #footer {
   background-color: #fcc419;
-  margin-top: 75px;
 }
 #footer .row {
   padding: 5px !important;
