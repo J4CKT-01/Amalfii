@@ -259,34 +259,45 @@ a.button:hover {
 }
 
 #hero {
-  --bs-gutter-x: 0rem;
-  height: 750px;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 75px;
+  margin-top: 25px;
 }
-#hero .text-overlay {
-  position: relative;
-  height: 100%;
+#hero .row {
+  border-radius: 15px;
+}
+#hero .hero-text {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 50px;
 }
-#hero .text-overlay .text {
+#hero .hero-text .text {
   color: #343a40;
   display: flex;
   flex-direction: column;
 }
-#hero .text-overlay .accredited {
+#hero .hero-text .accredited {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
 }
-#hero .text-overlay .accredited img {
+#hero .hero-text .accredited img {
   max-width: 100px;
   max-height: 100px;
   margin-right: 50px;
+}
+#hero .hero-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+#hero .hero-image {
+  -webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+  padding: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0px 15px 15px 0px;
 }
 
 .card {
@@ -312,15 +323,6 @@ a.button:hover {
   flex-grow: 1;
 }
 
-#services .row {
-  display: flex;
-  justify-content: space-evenly;
-}
-#services .card {
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35), 15px 15px #fcc419;
-  border-radius: 15px;
-}
-
 #about .content {
   display: flex;
   flex-direction: column;
@@ -341,7 +343,7 @@ a.button:hover {
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35), 15px 15px #fcc419;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
   border-radius: 15px;
 }
 
@@ -365,6 +367,15 @@ a.button:hover {
   max-width: 200px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+#image-gallery .image-gallery-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
 }
 
 #reviews .reviews-carousel {

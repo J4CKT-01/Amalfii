@@ -45,44 +45,55 @@
       </ul>
     </nav>
 
-    <section id="hero" class="container-fluid">
-      <div class="background"></div>
-      <div class="text-overlay">
-        <div class="text text-center text-md-start">
-          <h1>Amal<span style="color:#fcc419;">fii</span> Heating</h1>
-          <h2>Experts in home heating solutions.</h2>
-        </div>
-        <a class="button align-self-center align-self-md-start" href="#">Book with us now!</a>
-        <div class="accredited align-self-center align-self-md-start">
-          <img src="images/checkatrade.webp" alt="">
-          <img src="images/gassafe.png" alt="">
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="container">
+    <section id="hero" class="container">
       <div class="row">
-        <div class="col-12 col-lg-3 my-5 my-lg-0 mx-lg-4 card">
-            <div class="card-icon"><i class="fa-duotone fa-regular fa-sign-posts-wrench"></i></div>
-            <div class="card-title"><h3>Installations</h3></div>
+        <div class="hero-text col-12 col-lg-6">
+          <div class=" text text-center text-lg-start my-5">
+            <h1>Amal<span style="color:#fcc419;">fii</span> Heating</h1>
+            <h2>Experts in home heating solutions.</h2>
+          </div>
+          <div class="hero-icons my-4">
+            <div class="mx-lg-1">
+              <div class="hero-icon"><i class="fa-duotone fa-regular fa-sign-posts-wrench"></i></div>
+              <div class="hero-icon-title"><h4>Installations</h4></div>
+            </div>
+            <div class="mx-lg-5">
+              <div class="hero-icon"><i class="fa-duotone fa-regular fa-toolbox"></i></div>
+              <div class="hero-icon-title"><h4>Repairs</h4></div>
+            </div>
+            <div class="mx-lg-1">
+              <div class="hero-icon"><i class="fa-duotone fa-regular fa-repeat"></i></div>
+              <div class="hero-icon-title"><h4>Service Plans</h4></div>
+            </div>
+          </div>
+          <a class="button align-self-center align-self-lg-start my-5" href="#">Book with us now!</a>
         </div>
-        <div class="col-12 col-lg-3 my-5 my-lg-0 mx-lg-4 card">
-            <div class="card-icon"><i class="fa-duotone fa-regular fa-toolbox"></i></div>
-            <div class="card-title"><h3>Repairs</h3></div>
-        </div>
-        <div class="col-12 col-lg-3 my-5 my-lg-0 mx-lg-4 card">
-          <div class="card-icon"><i class="fa-duotone fa-regular fa-repeat"></i></div>
-          <div class="card-title"><h3>Service Plans</h3></div>
-        </div>
+        <img class="hero-image col-12 col-lg-6 p-0" src="images/boiler.avif" alt="">
       </div>
     </section>
 
-    
+    <section id="about" class="container">
+      <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
+      <div class="row mt-5 d-flex justify-content-between">
+        <div class="col-12 col-xxl-6 mb-5 mb-xxl-0 ps-0 pe-5 image">
+          <div class="about-image"></div>
+        </div>
+        <div class="col-12 col-xxl-6 px-5 content">
+          <h2>About Amalfii Heating</h2>
+          <p>
+            Amalfii Heating is a family run company with x years of experience covering all areas of home heating, plumbing and boilers. We have experience working in a wide range 
+            of buildings, from new builds to victorian-era houses! Whether you are looking purely for a service plan for your home, a quick repair, or need a complete refit of your 
+            infrastructure, Amalfii Heating has you covered!
+          </p>
+          <a class="button" href="#">Book Here!</a>
+        </div>
+      </div>
+    </section>
 
     <section id="companies" class="container">
       <div class="row d-flex justify-content-around">
         <div class="trusted-text col-12 col-xxl-6 p-5">
-          <h4>Trusted by some of the biggest names in the industry!</h4>
+          <h2>Trusted by some of the biggest names in the industry!</h2>
         </div>
         <div class="col-12 col-xxl-6 p-5">
           <div class="row gallery">
@@ -115,20 +126,16 @@
       </div>
     </section>
 
-    <section id="about" class="container">
-      <!-- If Needed Left and Right Padding in 'md' and 'lg' screen means use container class -->
-      <div class="row d-flex justify-content-between">
-        <div class="col-12 col-xxl-5 mb-5 mb-xxl-0 image">
-          <div class="about-image"></div>
+    <section id="image-gallery" class="container">
+      <div class="row">
+        <div class="col-4 image-gallery-image">
+          <img src="images/plumbing.avif" alt="">
         </div>
-        <div class="col-12 col-xxl-5 content">
-          <h2>About Amalfii Heating</h2>
-          <p>
-            Amalfii Heating is a family run company with x years of experience covering all areas of home heating, plumbing and boilers. We have experience working in a wide range 
-            of buildings, from new builds to victorian-era houses! Whether you are looking purely for a service plan for your home, a quick repair, or need a complete refit of your 
-            infrastructure, Amalfii Heating has you covered!
-          </p>
-          <a class="button" href="#">Book Here!</a>
+        <div class="col-4 image-gallery-image">
+          <img src="images/stock.jpg" alt="">
+        </div>
+        <div class="col-4 image-gallery-image">
+          <img src="images/boiler.avif" alt="">
         </div>
       </div>
     </section>
@@ -136,11 +143,11 @@
     <section id="reviews" class="container">
       <div class="row">
         <div class="col-12 d-flex justify-content-center">
-          <h2><span><i class="fa-duotone fa-regular fa-star-sharp" style="margin-right: 25px;"></i></span>Reviews from satisfied customers!</h2>
+          <h2><span><i class="fa-duotone fa-regular fa-star-sharp" style="margin-right: 25px; --fa-secondary-opacity: 0;"></i></span>Reviews from satisfied customers!</h2>
         </div>
         <div class="col-12 reviews-carousel">
           <script src="https://static.elfsight.com/platform/platform.js" async></script>
-        <div class="elfsight-app-f33d5ee8-65d7-469e-882a-e3ecb6b11cb9" data-elfsight-app-lazy></div>
+        <div class="elfsight-app-f33d5ee8-65d7-469e-882a-e3ecb6b11cb9 p-5" data-elfsight-app-lazy></div>
         </div>
       </div>
     </section>
