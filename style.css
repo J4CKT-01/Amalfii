@@ -22,15 +22,19 @@
   color: #868e96;
 }
 
-#plumbing-and-boilers .fa-li {
-  --fa-secondary-color: #fcc419;
-}
-#plumbing-and-boilers .fa-li i {
-  color: #fcc419;
+#plumbing-and-boilers ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 #plumbing-and-boilers li {
   font-size: 1.5rem;
   line-height: 2.75rem;
+  text-decoration: underline;
+  text-decoration-color: #fcc419;
+  text-decoration-thickness: 3px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  font-weight: 600;
 }
 #plumbing-and-boilers .plumbing-and-boilers-text {
   padding: 25px;
@@ -57,6 +61,7 @@
 #smart-home-thermostats .row {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
   border-radius: 15px;
+  position: relative;
 }
 #smart-home-thermostats img {
   width: 50%;
@@ -91,6 +96,18 @@
 #smart-home-thermostats .thermostat-content .thermostat-icons .thermostat h3 {
   margin-top: 15px;
   text-decoration: underline;
+}
+@media only screen and (max-width: 1200px) {
+  #smart-home-thermostats .thermostat-content {
+    width: 100%;
+    border-radius: 15px;
+  }
+  #smart-home-thermostats .thermostat-content .thermostat-icons .thermostat {
+    margin: 0px;
+  }
+  #smart-home-thermostats img {
+    display: none;
+  }
 }
 
 .contact-info {
@@ -239,7 +256,7 @@ html h5 {
 }
 
 .container {
-  padding-bottom: 75px;
+  margin-bottom: 75px;
 }
 
 a.button {
@@ -259,6 +276,7 @@ a.button:hover {
 }
 
 #hero {
+  position: relative;
   margin-top: 25px;
 }
 #hero .row {
@@ -287,7 +305,6 @@ a.button:hover {
 }
 #hero .hero-icons {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   text-align: center;
 }
@@ -298,6 +315,18 @@ a.button:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0px 15px 15px 0px;
+}
+@media only screen and (max-width: 1200px) {
+  #hero .hero-text {
+    padding: 0px;
+  }
+  #hero .hero-image {
+    display: none;
+  }
+  #hero .hero-icons {
+    background-color: white;
+    border-radius: 15px;
+  }
 }
 
 .card {

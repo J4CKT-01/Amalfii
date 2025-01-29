@@ -30,15 +30,19 @@ $primary: #fcc419;
 }
 
 #plumbing-and-boilers {
-    .fa-li {
-        i {
-            color: $primary;
-        }
-        --fa-secondary-color: #fcc419;
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
     }
     li {
         font-size: 1.5rem;
         line-height: 2.75rem;
+        text-decoration: underline;
+        text-decoration-color: $primary;
+        text-decoration-thickness: 3px;
+        text-decoration-skip-ink: none;
+        font-weight: 600;
+        
     }
     .plumbing-and-boilers-text {
         padding: 25px;  
@@ -66,6 +70,7 @@ $primary: #fcc419;
 #smart-home-thermostats {
     .row {
         @include effect-3d();
+        position: relative;
     }
     img {
         width: 50%;
@@ -97,6 +102,20 @@ $primary: #fcc419;
                     text-decoration: underline;
                 }
             }
+        }
+    }
+    @media only screen and (max-width: 1200px) {
+        .thermostat-content {
+            width: 100%;
+            border-radius: 15px;
+            .thermostat-icons {
+                .thermostat {
+                    margin: 0px;
+                }
+            }
+        }
+        img {
+            display: none;
         }
     }
 }
