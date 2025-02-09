@@ -1,6 +1,38 @@
+$primary: #fcc419;
+@mixin effect-3d {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+  }
+
 .contact-info {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 25px;
+}
+
+#faq {
+    .btn {
+        border-radius: 15px;
+        box-shadow:
+        0px 5px 15px rgba(0, 0, 0, 0.35), 
+        15px 15px 0px $primary;
+        font-size: 2rem;
+    }
+    .faq-row {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        .question {
+            margin: 15px 0px 15px 0px;
+            h4 {
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 1.25rem;
+                list-style: none;
+            }
+        }
+    }
 }

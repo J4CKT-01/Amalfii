@@ -1,6 +1,5 @@
 @import "services-and-pricing/_services";
 @import "contact/_contact";
-@import "faq/_faq";
 
 @font-face {
   font-family: "Ubuntu";
@@ -16,10 +15,6 @@ $secondary: #ffe066;
 @mixin effect-3d {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
   border-radius: 15px;
-}
-
-body {
-  min-height: 100vh;
 }
 
 * {
@@ -152,6 +147,21 @@ html {
   margin-bottom: 75px;
 }
 
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+li {
+  font-size: 1.5rem;
+  line-height: 2.75rem;
+  text-decoration: underline;
+  text-decoration-color: $primary;
+  text-decoration-thickness: 3px;
+  text-decoration-skip-ink: none;
+  font-weight: 600;
+  
+}
+
 a.button {
   background-color: $primary;
   width: fit-content;
@@ -164,6 +174,13 @@ a.button {
 }
 a.button:hover {
   background-color: $secondary;
+  cursor: pointer;
+}
+
+.modal-footer {
+  .btn {
+    background-color: $primary;
+  }
 }
 
 #hero {
@@ -203,6 +220,7 @@ a.button:hover {
     padding: 0px;
     object-fit: cover;
     border-radius: 0px 15px 15px 0px;
+    max-height: 800px;
   }
   @media only screen and (max-width: 1200px) {
     .hero-text {
@@ -289,13 +307,19 @@ a.button:hover {
   }
 }
 
+.modal-body {
+  text-align: start;
+}
+
 #image-gallery {
 
   .image-gallery-image {
     img {
       width: 100%;
       height: 100%;
-      object-fit: fill;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+      position: relative;
       @include effect-3d();
     }
   }

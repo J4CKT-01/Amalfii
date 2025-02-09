@@ -1,6 +1,16 @@
 #service-plans {
   margin-top: 75px;
 }
+#service-plans .modal-body {
+  padding: 2.5rem;
+}
+#service-plans .modal-body p {
+  margin-top: 20px;
+}
+#service-plans .modal-body li {
+  margin: 5px 0px;
+  font-size: 1.25rem;
+}
 
 .services-row .card {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
@@ -22,20 +32,6 @@
   color: #868e96;
 }
 
-#plumbing-and-boilers ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-#plumbing-and-boilers li {
-  font-size: 1.5rem;
-  line-height: 2.75rem;
-  text-decoration: underline;
-  text-decoration-color: #fcc419;
-  text-decoration-thickness: 3px;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
-  font-weight: 600;
-}
 #plumbing-and-boilers .plumbing-and-boilers-text {
   padding: 25px;
 }
@@ -71,6 +67,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 0px 0px 15px;
+  max-height: 400px;
 }
 #smart-home-thermostats .thermostat-content {
   width: 50%;
@@ -117,16 +114,34 @@
   padding: 25px;
 }
 
+#faq .btn {
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35), 15px 15px 0px #fcc419;
+  font-size: 2rem;
+}
+#faq .faq-row {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+#faq .faq-row .question {
+  margin: 15px 0px 15px 0px;
+}
+#faq .faq-row .question h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+#faq .faq-row .question p {
+  font-size: 1.25rem;
+  list-style: none;
+}
+
 @font-face {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 400;
   src: local("Ubuntu"), url(http://example.com/fonts/ubuntu.woff) format("woff");
 }
-body {
-  min-height: 100vh;
-}
-
 * {
   color: #343a40;
   box-sizing: border-box;
@@ -259,6 +274,22 @@ html h5 {
   margin-bottom: 75px;
 }
 
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  font-size: 1.5rem;
+  line-height: 2.75rem;
+  text-decoration: underline;
+  text-decoration-color: #fcc419;
+  text-decoration-thickness: 3px;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  font-weight: 600;
+}
+
 a.button {
   background-color: #fcc419;
   width: -moz-fit-content;
@@ -273,6 +304,11 @@ a.button {
 
 a.button:hover {
   background-color: #ffe066;
+  cursor: pointer;
+}
+
+.modal-footer .btn {
+  background-color: #fcc419;
 }
 
 #hero {
@@ -315,6 +351,7 @@ a.button:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0px 15px 15px 0px;
+  max-height: 800px;
 }
 @media only screen and (max-width: 1200px) {
   #hero .hero-text {
@@ -398,11 +435,17 @@ a.button:hover {
      object-fit: contain;
 }
 
+.modal-body {
+  text-align: start;
+}
+
 #image-gallery .image-gallery-image img {
   width: 100%;
   height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/1;
+  position: relative;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
   border-radius: 15px;
 }
